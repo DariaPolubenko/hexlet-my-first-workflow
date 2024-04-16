@@ -1,9 +1,14 @@
 #Test
-
 name: hello-world
-on: push
+
+on: 
+  - push
+  - pull_request
+
 jobs:
-    build:
-      runs-on: ubuntu-latest
-	- run: make say-hello
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: make say-hello
 
