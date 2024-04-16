@@ -1,5 +1,5 @@
 #Test
-name: hello-world
+name: hello
 
 on: 
   - push
@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     steps:
       - run: cd / && make say-hello
 
